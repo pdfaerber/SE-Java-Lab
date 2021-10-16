@@ -10,10 +10,14 @@ public class Person {
 	private String lname;
 	
 	@Autowired
-	private Laptop laptop; 
+	private Laptop laptop;
+	
+	@Autowired
+	private SmartPhone smartphone; 
 	
 	
-//	public Person(int id, String fname, String lname) {
+//	public Person(int id, String fname,
+//	String lname) {
 //		super();
 //		this.id = id;
 //		this.fname = fname;
@@ -65,6 +69,14 @@ public class Person {
 		this.laptop = laptop;
 	}
 	
+	public SmartPhone getSmartPhone() {
+		return smartphone; 
+	}
+	
+	public void setSmartPhone(SmartPhone smartphone) {
+		this.smartphone = smartphone; 
+		
+	}
 	
 
 	
