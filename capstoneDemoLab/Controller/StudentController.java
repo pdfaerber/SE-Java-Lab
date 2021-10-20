@@ -1,4 +1,4 @@
-package studentController;
+package com.example.demo.Controller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import capstoneModel.StudentModel;
-import exception.ResourceNotFoundException;
-import studentRepository.StudentRepository;
+import com.example.demo.Exception.ResourceNotFoundException;
+import com.example.demo.Model.StudentModel;
+import com.example.demo.Repository.StudentRepository;
 
 @CrossOrigin (origins = "http://localhost:3000")
 @RestController 
@@ -43,6 +43,11 @@ public class StudentController {
 	}
 /*	
  * post request
+ *
+ * @PatchMapping
+    public Model updateItem(@RequestBody Model item) {
+        return modelService.updateItem(item);
+    }
  * put request
  * delete request
  * 

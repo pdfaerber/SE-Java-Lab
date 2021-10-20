@@ -1,4 +1,4 @@
-package capstoneModel;
+package com.example.demo.Model;
 
 
 import javax.persistence.Entity;
@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "student")
+@Table (name = "students")
 
 public class StudentModel {
 
