@@ -14,13 +14,14 @@ public class StudentModel {
 	private int id; 
 	private String name; 
 	private int grade;
-	private StringBuilder comment; 
+	private String comment; /* Stringbuilder object datatype to store comments/tips might be a technical challenge to mention during presentation  */
+	
 	
 	public StudentModel() {
 		
 	}
 
-	public StudentModel(int id, String name, int grade,StringBuilder comment) {
+	public StudentModel(int id, String name, int grade, String comment) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -52,11 +53,11 @@ public class StudentModel {
 		this.grade = grade;
 	}
 
-	public StringBuilder getComment() {
+	public String getComment() {
 		return comment;
 	}
 
-	public void setComment(StringBuilder comment) {
+	public void setComment(String comment) {
 		this.comment = comment;
 	}
 
@@ -65,7 +66,7 @@ public class StudentModel {
 		return "StudentModel [id=" + id + ", name=" + name + ", grade=" + grade + ", comment=" + comment + "]";
 	}
 
-	
+	//remember to convert comment.toString()
 	
 
 }
