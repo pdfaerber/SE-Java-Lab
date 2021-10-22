@@ -13,17 +13,19 @@ public class StudentModel {
 	@Id
 	private int id; 
 	private String name; 
-	private int grade; 
+	private int grade;
+	private StringBuilder comment; 
 	
 	public StudentModel() {
 		
 	}
 
-	public StudentModel(int id, String name, int grade) {
+	public StudentModel(int id, String name, int grade,StringBuilder comment) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.grade = grade;
+		this.comment = comment; 
 	}
 
 	public int getId() {
@@ -49,7 +51,20 @@ public class StudentModel {
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
-	
+
+	public StringBuilder getComment() {
+		return comment;
+	}
+
+	public void setComment(StringBuilder comment) {
+		this.comment = comment;
+	}
+
+	@Override
+	public String toString() {
+		return "StudentModel [id=" + id + ", name=" + name + ", grade=" + grade + ", comment=" + comment + "]";
+	}
+
 	
 	
 
