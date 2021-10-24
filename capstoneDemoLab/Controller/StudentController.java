@@ -56,6 +56,8 @@ public class StudentController {
 		StudentModel oldFootball = studentRepo.findById(id).orElseThrow(()-> new ResourceNotFoundException());
 		oldFootball.setName(football.getName());
 		oldFootball.setGrade(football.getGrade());
+		oldFootball.setEmail(football.getEmail());
+		oldFootball.setComment(football.getComment());
 		System.out.println("update name: "+ id +  football.toString());
         return studentRepo.save(oldFootball);
     }//end updateItem

@@ -15,18 +15,19 @@ public class StudentModel {
 	private String name; 
 	private int grade;
 	private String comment; /* Stringbuilder object datatype to store comments/tips might be a technical challenge to mention during presentation  */
-	
+	private String email; 
 	
 	public StudentModel() {
 		
 	}
 
-	public StudentModel(int id, String name, int grade, String comment) {
+	public StudentModel(int id, String name, int grade, String comment, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.grade = grade;
-		this.comment = comment; 
+		this.comment = comment;
+		this.email = email;
 	}
 
 	public int getId() {
@@ -61,10 +62,20 @@ public class StudentModel {
 		this.comment = comment;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	@Override
 	public String toString() {
-		return "StudentModel [id=" + id + ", name=" + name + ", grade=" + grade + ", comment=" + comment + "]";
+		return "StudentModel [id=" + id + ", name=" + name + ", grade=" + grade + ", comment=" + comment + ", email="
+				+ email + "]";
 	}
+
 
 	//remember to convert comment.toString()
 	
